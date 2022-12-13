@@ -26,7 +26,7 @@ func OpenDB(DB *gorm.DB) Handler {
 }
 
 func Init() *gorm.DB {
-	dsn := "host=localhost user=postgres password=ivaneteJC dbname=postform port=5432 sslmode=disable"
+	dsn := "host=localhost user=# password=# dbname=# port=# sslmode=disable"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Erro ao realizar conectar com o postgress")
