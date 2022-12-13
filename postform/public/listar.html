@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylelist.css">
+    
+</head>
+<body>
+    <section class="container-pai">
+        <nav class="nav-principal">
+            <li id="botao-li" class="glow-on-hover"><a href="http://localhost:7878/static" target="_blank"> Voltar </a></li> 
+        </nav>
+    <section class="container-article">
+       
+        <article class="container-principal">
+           
+            {{ range $Users := .listUsers  }}
+            <ul class="container-lista">
+                <div class="container-itens"> 
+                    <li class="lista-users">ID: {{ .ID }}</li>
+                    <li class="lista-users">Nome: {{ .Nome }}</li>
+                    <li class="lista-users">Email: {{ .Email }}</li>
+                </div>
+            </ul>
+        {{ end }}
+    </article>
+   
+</section>
+<div class="container">
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+  </div>
+</section>
+
+
+</body>
+</html>
